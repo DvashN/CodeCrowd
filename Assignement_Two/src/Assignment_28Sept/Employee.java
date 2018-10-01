@@ -99,6 +99,10 @@ public abstract class Employee implements IEmployee
                 System.out.println("Salary not in Range");
             }
         }
+        else
+        {
+            this.salary = amount;
+        }
     }
     
     @Override
@@ -118,7 +122,7 @@ public abstract class Employee implements IEmployee
     @Override
     public String toString()
     {
-        return name + ", " + age + ", " + employeeType + ", " + salary;
+        return name + ", " + age + ", " + employeeType + ", " + salary + ", " + active ;
     }
 
     public String getName() 
